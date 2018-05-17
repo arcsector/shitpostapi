@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  shitpost:
+    image: shitpost:1
+    logging:
+      driver: 'json-file'
+    env_file:
+      - secrets.env
+    tty: true
